@@ -1,0 +1,10 @@
+SQLAlchemy
+mysqlclient
+mysql-connector-python
+pycryptodome
+tornado
+redis
+nltk
+beautifulsoup4
+wordcloud
+algorithmia

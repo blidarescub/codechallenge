@@ -1,0 +1,39 @@
+<html>
+   <head>
+      <title>Codechallenge Admin</title>
+   </head>
+   <body>
+      <p>URLs in the database:</p>
+      <p></p>
+      <table style="width:50%">
+      <tr>
+        <th>URL address</th>
+        <th>Sentiment</th>
+      </tr>
+      {% for url in urls %}
+        <tr>
+          <td>{{url["value"]}}</td>
+          <td>{{url["sentiment"]}}</td>
+        </tr>
+      {% end %}
+      </table>
+      <p></p>
+      <p></p>
+      <p>================================================================</p>
+      <p></p>
+      <p>Word frequencies in the database:</p>
+        <p></p>
+        <table style="width:25%">
+        <tr>
+          <th>Word</th>
+          <th>Frequency</th>
+        </tr>
+        {% for word in words %}
+          <tr>
+            <td>{{word["value"]}}</td>
+            <td>{{word["frequency"]}}</td>
+          </tr>
+        {% end %}
+        </table>
+   </body>
+ </html>
