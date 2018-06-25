@@ -16,7 +16,7 @@ from word_cloud_processing import URLProcessing
 class MainHandler(RequestHandler):
     def get(self, *args):
         self.write('<html><body><form action="/submit_url" method="POST">'
-                   '<input type="text" name="url_text_input">'
+                   '<input type="text" name="url_text_input" size="85">'
                    '<input type="submit" value="Submit">'
                    '</form></body></html>')
 
